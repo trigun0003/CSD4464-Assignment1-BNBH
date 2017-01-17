@@ -19,7 +19,7 @@ public class CSD4464Assignment1BNBH {
     }
 
     
-    public static String stringPower(String s, int power){
+    public static String stringPower(String input, int power){
         return null;
     }
     
