@@ -17,22 +17,22 @@ import static org.junit.Assert.*;
  * @author c0685310
  */
 public class CSD4464Assignment1BNBHTest {
-    
+
     public CSD4464Assignment1BNBHTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -63,31 +63,53 @@ public class CSD4464Assignment1BNBHTest {
 
     /**
      *
-     * @return 
+     * @return
      */
     @Test
-    public int testLessThanOneShouldReturnNull(){
-        String str = "";
+    public void testLessThanOneShouldReturnNull() {
+        String str = "bob";
         int pwr = 0;
+        String exResult = null;
         String result = CSD4464Assignment1BNBH.stringPower(str, pwr);
-        return 0;
-        
-        
+        assertEquals(exResult, result);
+
+        fail("String failed Expected: " + exResult + " Result: " + result);
+
     }
-    
+
     /**
      *
-     * @return 
+     * @return
      */
     @Test
-    public String testStringAndOneShouldReturnString(){
-        
-        String str = "sample";
-        int pwr = 1;
+    public void testStringAndOneShouldReturnString() {
+
+        String str = "bob";
+        int pwr = 2;
+        String exResult = "bob";
         String result = CSD4464Assignment1BNBH.stringPower(str, pwr);
-        return "sample";
-        
-        
-        
+
+        assertEquals(exResult, result);
+
+        fail("String failed Expected: " + exResult + " Result: " + result);
     }
+
+    /**
+     *
+     * @return
+     */
+    @Test
+    public void testStringAndTwoShouldReturnStringDoubled() {
+
+        String str = "bob";
+        int pwr = 2;
+        String exResult = "bobbob";
+        String result = CSD4464Assignment1BNBH.stringPower(str, pwr);
+
+        assertEquals(exResult, result);
+
+        fail("String failed Expected: " + exResult + " Result: " + result);
+
+    }
+
 }
