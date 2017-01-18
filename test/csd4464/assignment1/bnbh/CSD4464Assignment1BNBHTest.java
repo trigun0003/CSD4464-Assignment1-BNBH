@@ -82,7 +82,7 @@ public class CSD4464Assignment1BNBHTest {
     @Test
     public void testStringAndOneShouldReturnString() {
 
-         String input = "a";
+        String input = "a";
         int power = 1;
         String expResult = "a";
         String result = CSD4464Assignment1BNBH.stringPower(input, power);
