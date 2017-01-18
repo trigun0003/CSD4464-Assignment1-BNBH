@@ -18,7 +18,8 @@ public class CSD4464Assignment1BNBH {
         // TODO code application logic here
     }
 
-    //comment test
+    //comment test here
+   
     public static String stringPower(String input, int power) {
         String result = null;
         if (input.equals(""))
