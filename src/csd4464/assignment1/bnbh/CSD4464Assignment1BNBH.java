@@ -25,7 +25,10 @@ public class CSD4464Assignment1BNBH {
             result = "";
         else if(power < 1)
             result = null;
+        else if(power == 1)
+            result = input;
         return result;
+        
     }
     
 }
