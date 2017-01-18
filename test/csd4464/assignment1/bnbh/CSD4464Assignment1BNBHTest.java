@@ -38,18 +38,6 @@ public class CSD4464Assignment1BNBHTest {
     }
 
     /**
-     * Test of main method, of class CSD4464Assignment1BNBH.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        CSD4464Assignment1BNBH.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
      * Test of stringPower method, of class CSD4464Assignment1BNBH.
      */
     @Test
@@ -103,7 +91,7 @@ public class CSD4464Assignment1BNBHTest {
 
         assertEquals(exResult, result);
 
-        fail("String failed Expected: " + exResult + " Result: " + result);
+        
 
     }
 

@@ -19,17 +19,23 @@ public class CSD4464Assignment1BNBH {
     }
 
     //comment test here
-   
     public static String stringPower(String input, int power) {
         String result = null;
-        if (input.equals(""))
+        if (input.equals("")) {
             result = "";
-        else if(power < 1)
+        } else if (power < 1) {
             result = null;
-        else if(power == 1)
+        } else if (power == 1) {
             result = input;
+        }
+        else if (power > 1 ){
+            result ="";
+            for (int i = 1; i <= power; i++) {
+               result = result + input; 
+            }
+        }
         return result;
-        
+
     }
-    
+
 }
