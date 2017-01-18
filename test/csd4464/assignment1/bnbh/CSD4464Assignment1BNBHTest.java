@@ -66,13 +66,12 @@ public class CSD4464Assignment1BNBHTest {
      * @return 
      */
     @Test
-    public int testLessThanOneShouldReturnNull(){
-        String str = "";
-        int pwr = 0;
-        String result = CSD4464Assignment1BNBH.stringPower(str, pwr);
-        return 0;
-        
-        
+    public void testLessThanOneShouldReturnNull(){
+        String input = "a";
+        int power = 0;
+        String expResult = null;
+        String result = CSD4464Assignment1BNBH.stringPower(input, power);
+        assertEquals(expResult, result);
     }
     
     /**
@@ -80,14 +79,13 @@ public class CSD4464Assignment1BNBHTest {
      * @return 
      */
     @Test
-    public String testStringAndOneShouldReturnString(){
-        
-        String str = "sample";
-        int pwr = 1;
-        String result = CSD4464Assignment1BNBH.stringPower(str, pwr);
-        return "sample";
-        
-        
-        
+    public void testStringAndOneShouldReturnString(){
+        String input = "a";
+        int power = 1;
+        String expResult = "a";
+        String result = CSD4464Assignment1BNBH.stringPower(input, power);
+        assertEquals(expResult, result);
+
     }
 }
+
