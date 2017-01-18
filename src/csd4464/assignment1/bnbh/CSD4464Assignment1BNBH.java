@@ -19,8 +19,8 @@ public class CSD4464Assignment1BNBH {
     }
 
     //comment test
-    public static String stringPower(String input, int power){
+    public static String stringPower(String input, int power) {
         return null;
     }
-    
+
 }
