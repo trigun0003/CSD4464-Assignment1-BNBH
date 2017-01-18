@@ -17,5 +17,10 @@ public class CSD4464Assignment1BNBH {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
+
+    //comment test
+    public static String stringPower(String input, int power) {
+        return null;
+    }
+
 }
