@@ -23,8 +23,9 @@ public class CSD4464Assignment1BNBH {
         String result = null;
         if (input.equals(""))
             result = "";
-            
+        else if(power < 1)
+            result = null;
         return result;
     }
-
+    
 }
